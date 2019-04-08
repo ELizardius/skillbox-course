@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	
+	<head>
+		<title>Отправка заявки на конференцию</title>
+		<meta charset="utf-8"> 
+		<style>
+			fieldset {
+   border:0 none;
+					}
+		</style>
+	</head>
+<body>
+
+<h1>Отправка заявки на конференцию</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+	<h2>Основные данные</h2>
+
+<fieldset>
+	<legend><label for="user-name"><b>* Фамилия, имя, отчество:</b></label></legend>
+	<input name="user-name" id="user-name" required size="30" >
+</fieldset>
+		<br>
+<fieldset>
+	<legend><label for="birth-date"><b>Дата рождения:</b></label></legend>
+
+	<input type="date" name="birth-date" id="birth-date">
+</fieldset>
+		<br>
+<fieldset>
+    <legend><b>Пол:</b></legend>
+    <label for="male"><input type="radio" id="male" name="gender"> мужской</label>
+    <input type="radio" id="female" name="gender"> <label for="female">женский </label>
+</fieldset>
+		<br>
+	<h2>Данные для создания личного кабинета</h2>
+
+<fieldset>	
+	<legend><label for="email"><b>* Адрес электронной почты:</b></label></legend>
+	<input type="email" name="email" id="email" required size="30" >
+</fieldset>
+		<br>
+<fieldset>
+	<legend><label for="password"><b>* Пароль для создания личного кабинета:</b></label></legend>
+	<input type="password" name="password" id="password" required size="30" >
+</fieldset>
+		<br>
+<fieldset>
+	<legend><label for="password-check"><b>* Подтверждение пароля:</b></label></legend>
+	<input type="password" name="password-check" id="password-check" required size="30" >
+</fieldset>
+		<br>
+	<h2>Материалы для конференции</h2>
+
+<fieldset>
+	<legend><label for="topic"><b>* Тема доклада:</b></label></legend>
+	<input type="text" name="topic" id="topic" required size="30" >
+</fieldset>
+		<br>
+<fieldset>
+	<legend><label for="theses"><b>* Тэзисы доклада (не более 1000 символов):</b></label></legend>
+	<textarea cols="30" rows="10" name="theses" id="theses" required></textarea>
+</fieldset>
+		<br>
+<fieldset>
+	<legend><label for="presentation"><b>Файл презентации:</b></label></legend>
+	<input type="file" name="presentation" id="presentation">
+</fieldset>
+		<br>
+<fieldset>
+	<legend><b>Дополнительные опции:</b></legend>
+	<input type="checkbox" name="hotel-accommodation" id="hotel-accommodation"> <label for="hotel-accommodation">Проживание в отеле </label><br>
+	<input type="checkbox" name="breakfast" checked id="breakfast"><label for="breakfast">Завтрак </label><br>
+	<input type="checkbox" name="lunch" id="lunch"><label for="lunch">Обед</label><br>
+	<input type="checkbox" name="dinner" id="dinner"><label for="dinner">Ужин</label><br>
+</fieldset>
+		<hr>
+	<input type="submit" name="Send" value="Отправить">
+	<hr>
+</form>
+<small>* Поля, отмеченные звездочкой, являются обязательными для заполнения</small>
+
+</body>
+</html>
